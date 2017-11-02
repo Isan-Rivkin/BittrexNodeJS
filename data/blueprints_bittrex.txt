@@ -1,0 +1,124 @@
+    bittrex.getmarketsummary( { market : 'BTC-LTC'}, function( data, err ) {
+        console.log( data );
+    });
+
+    { success: true,
+      message: '',
+      result:
+       [ { MarketName: 'BTC-LTC',
+           High: 0.008357,
+           Low: 0.00677804,
+           Volume: 165689.16074968,
+           Last: 0.007482,
+           BaseVolume: 1268.28735005,
+           TimeStamp: '2017-11-02T14:41:13.617',
+           Bid: 0.00745183,
+           Ask: 0.00748197,
+           OpenBuyOrders: 1263,
+           OpenSellOrders: 13780,
+           PrevDay: 0.00833811,
+           Created: '2014-02-13T00:00:00' } ] }
+
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+
+
+    bittrex.getmarkethistory({ market : 'BTC-LTC' }, function( data, err ) {
+        console.log( data );
+    });
+
+{ success: true,
+  message: '',
+  result:
+   [ { Id: 90063529,
+       TimeStamp: '2017-11-02T14:43:47.437',
+       Quantity: 0.21770151,
+       Price: 0.00746865,
+       Total: 0.00162593,
+       FillType: 'PARTIAL_FILL',
+       OrderType: 'SELL' },
+     { Id: 90063499,
+       TimeStamp: '2017-11-02T14:43:37.23',
+       Quantity: 0.59264435,
+       Price: 0.00746865,
+       Total: 0.00442625,
+       FillType: 'PARTIAL_FILL',
+       OrderType: 'BUY' },
+
+        ...
+        ...
+        ...
+ ] }
+
+ #######################################################################################################
+ #######################################################################################################
+ #######################################################################################################
+
+    bittrex.getorderbook({ market : 'BTC-LTC', depth : 10, type : 'both' }, function( data, err ) {
+        console.log( JSON.stringify(data) );
+    });
+
+{"success":true,"message":"","result":
+{"buy":[
+    {"Quantity":55.43156496,"Rate":0.00759527},
+    {"Quantity":22.56117568,"Rate":0.0075762},
+    {"Quantity":24.181,"Rate":0.00757075},
+    {"Quantity":28.62245426,"Rate":0.00757074}
+    ...
+    ...
+    ...
+    ]
+    "sell":[
+    {"Quantity":13.66154089,"Rate":0.007626},
+    {"Quantity":8.59773264,"Rate":0.00763077},
+    {"Quantity":19.623,"Rate":0.00763078}
+    ...
+    ...
+    ...
+    ]
+]}}
+ #######################################################################################################
+ #######################################################################################################
+ #######################################################################################################
+
+    bittrex.getticker( { market : 'BTC-LTC' }, function( data, err ) {
+        console.log( data );
+    });
+
+{ success: true,
+  message: '',
+  result: { Bid: 0.00759527, Ask: 0.0075965, Last: 0.00759527 } }
+
+   #######################################################################################################
+   #################################### SUBSCRIBE #####################################
+   #######################################################################################################
+
+       bittrex.websockets.subscribe(['USDT-ETH'], function(data, client) {
+           if (data.M === 'updateExchangeState') {
+               data.A.forEach(function(data_for) {
+                   console.log('Market Update for '+ data_for.MarketName, data_for);
+
+               });
+           }
+       });
+
+  Market Update for USDT-ETH { MarketName: 'USDT-ETH',
+    Nounce: 131296,
+    Buys: [],
+    Sells:
+     [ { Type: 1, Rate: 286.84932852, Quantity: 0 },
+       { Type: 2, Rate: 286.84932853, Quantity: 1.67435697 } ],
+    Fills: [] }
+  Market Update for USDT-ETH { MarketName: 'USDT-ETH',
+    Nounce: 131297,
+    Buys: [],
+    Sells:
+     [ { Type: 0, Rate: 286.84932852, Quantity: 0.409305 },
+       { Type: 2, Rate: 286.84932853, Quantity: 1.77188397 } ],
+    Fills: [] }
+
+
+
+
+
