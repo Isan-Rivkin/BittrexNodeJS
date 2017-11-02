@@ -15,34 +15,34 @@ var ticker_returner = function(res,i,final,obj){
     }
 };
 //
-// router.get('/',function(req,res,next){
-// /*
-//     bittrex.getcandles({
-//         marketName: 'USDT-BTC',
-//         tickInterval: 'fiveMin', // intervals are keywords
-//     }, function( data, err ) {
-//         console.log( data );
-//         res.json(data);
-//     });
-// */
-//
-//     // bittrex.getmarketsummary( { market : 'BTC-LTC'}, function( data, err ) {
-//     //     console.log( data );
-//     // });
-//     //
-//     // bittrex.getmarkethistory({ market : 'BTC-LTC' }, function( data, err ) {
-//     //     console.log( data );
-//     // });
-//     //
-//     // bittrex.getorderbook({ market : 'BTC-LTC', depth : 10, type : 'both' }, function( data, err ) {
-//     //     console.log( JSON.stringify(data) );
-//     // });
-//     //
-//     // bittrex.getticker( { market : 'BTC-LTC' }, function( data, err ) {
-//     //     console.log( data );
-//     // });
-//     res.json({ronen:"ronen"});
-// });
+router.get('/',function(req,res,next){
+
+    bittrex.getcandles({
+        marketName: 'USDT-ETH',
+        tickInterval: 'fiveMin', // intervals are keywords
+    }, function( data, err ) {
+        console.log( data );
+        res.json(data);
+    });
+
+
+    // bittrex.getmarketsummary( { market : 'BTC-LTC'}, function( data, err ) {
+    //     console.log( data );
+    // });
+    //
+    // bittrex.getmarkethistory({ market : 'BTC-LTC' }, function( data, err ) {
+    //     console.log( data );
+    // });
+    //
+    // bittrex.getorderbook({ market : 'BTC-LTC', depth : 10, type : 'both' }, function( data, err ) {
+    //     console.log( JSON.stringify(data) );
+    // });
+    //
+    // bittrex.getticker( { market : 'BTC-LTC' }, function( data, err ) {
+    //     console.log( data );
+    // });
+    //  res.json({ronen:"ronen"});
+});
 
 /* Subscribe to a market an get constant updates!!. */
 // router.get('/', function(req, res, next) {

@@ -119,6 +119,74 @@
     Fills: [] }
 
 
+   #######################################################################################################
+   #################################### CANDLES #####################################
+   #######################################################################################################
 
+    bittrex.getcandles({
+        marketName: 'USDT-ETH',
+        tickInterval: 'fiveMin', // intervals are keywords
+    }, function( data, err ) {
+        console.log( data );
+        res.json(data);
+    });
 
+    /*********** interval options to define as param *******/
+    var CANDLE_INTERVALS = map[string]bool{
+    	"oneMin":    true,
+    	"fiveMin":   true,
+    	"thirtyMin": true,
+    	"hour":      true,
+    	"day":       true,
+    }
+
+    /****** dictionary of candles *************/
+BaseVolume is the total value traded in the base currency, for example Ethereum. 24 hours regardless if its buy or sell.
+type Candle struct {
+	TimeStamp  CandleTime `json:"T"`
+	Open       float64    `json:"O"`
+	Close      float64    `json:"C"`
+	High       float64    `json:"H"`
+	Low        float64    `json:"L"`
+	Volume     float64    `json:"V"`
+	BaseVolume float64    `json:"BV"`
+}
+
+/***** json result ***********/
+{ success: true,
+  message: '',
+  result:
+   [ { O: 339.07,
+       H: 340.1,
+       L: 339.07,
+       C: 340,
+       V: 23.8382761,
+       T: '2017-10-13T16:10:00',
+       BV: 8104.25915107 },
+     { O: 339.10000001,
+       H: 340,
+       L: 339.10000001,
+       C: 339.13391001,
+       V: 40.99252803,
+       T: '2017-10-13T16:15:00',
+       BV: 13914.9379826 },
+       ...
+       ...
+       ...
+            { O: 285.9,
+              H: 287.91345,
+              L: 285.85552006,
+              C: 285.9,
+              V: 100.29039502,
+              T: '2017-11-02T15:55:00',
+              BV: 28735.08747511 },
+            { O: 287,
+                // highest offer line
+              H: 287.58999999,
+              // low box
+              L: 285.90000001,
+              C: 285.90000001,
+              V: 20.76261448,
+              T: '2017-11-02T16:00:00',
+              BV: 5963.52508814 } ] }
 
