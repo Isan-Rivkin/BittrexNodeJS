@@ -6,6 +6,10 @@ var server = www.server;
 var io = require('socket.io')(server);
 
 
+module.exports= sayHelloInEnglish = function() {
+    return "HELLO";
+};
+
 // config
 bittrex.options({
     API_KEY:'1008ea4bd3544382a7e5bebd12ecdd66',

@@ -23,7 +23,8 @@ var server = http.createServer(app);
 
 // socket.io
 //var io = require('socket.io')(server);
-//var bittrex=  require('../routes/bittrex');
+var bittrex=  require('../routes/bittrex');
+bittrex.sayHelloInEnglish();
 //exports.io = io;
 
 // io.on('connection',function(socket){
