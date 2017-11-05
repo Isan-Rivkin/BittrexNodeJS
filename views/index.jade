@@ -3,3 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  button(onclick='clicked()') click me
+  script(src='/socket.io/socket.io.js')
+  script.
+    var socket = io();
+    function clicked()
+    {
+     socket.emit('clicked',"ronen");
+    };
+    socket.on('broadcast',function(msg){
+        console.log('from the server:' + msg);
+    });

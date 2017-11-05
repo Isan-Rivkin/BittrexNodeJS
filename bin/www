@@ -21,6 +21,22 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+// socket.io
+//var io = require('socket.io')(server);
+//var bittrex=  require('../routes/bittrex');
+//exports.io = io;
+
+// io.on('connection',function(socket){
+//   console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+//     socket.on('disconnect', function(){
+//         console.log('user disconnected');
+//     })
+//     socket.on('clicked', function(msg){
+//         console.log('user-> ' + msg);
+//     })
+//     io.emit('broadcast', "i am server nice to meet");
+// });
+
 /**
  * Listen on provided port, on all network interfaces.
  */
@@ -88,3 +104,6 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+module.exports  = server;
+

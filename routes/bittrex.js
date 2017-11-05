@@ -1,6 +1,10 @@
 var bittrex = require('node-bittrex-api');
 var express = require('express');
 var router = express.Router();
+var www = require('../bin/www');
+var server = www.server;
+var io = require('socket.io')(server);
+
 
 // config
 bittrex.options({
@@ -14,35 +18,60 @@ var ticker_returner = function(res,i,final,obj){
         res.json(obj);
     }
 };
-//
+
+io.on('connection',function(socket){
+    console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+    socket.on('disconnect', function(){
+        console.log('user disconnected');
+    })
+    socket.on('clicked', function(msg){
+        console.log('user-> ' + msg);
+    })
+    io.emit('broadcast', "i am server nice to meet");
+});
 router.get('/',function(req,res,next){
 
-    bittrex.getcandles({
-        marketName: 'USDT-ETH',
-        tickInterval: 'fiveMin', // intervals are keywords
-    }, function( data, err ) {
-        console.log( data );
-        res.json(data);
+    bittrex.websockets.subscribe(['USDT-ETH'], function(data, client) {
+        if (data.M === 'updateExchangeState') {
+            data.A.forEach(function(data_for) {
+               // console.log('Market Update for '+ data_for.MarketName, data_for);
+               // res.json(data_for);
+                res.render('index',{title:"bittrex js file"});
+
+            });
+        }
     });
-
-
-    // bittrex.getmarketsummary( { market : 'BTC-LTC'}, function( data, err ) {
-    //     console.log( data );
-    // });
-    //
-    // bittrex.getmarkethistory({ market : 'BTC-LTC' }, function( data, err ) {
-    //     console.log( data );
-    // });
-    //
-    // bittrex.getorderbook({ market : 'BTC-LTC', depth : 10, type : 'both' }, function( data, err ) {
-    //     console.log( JSON.stringify(data) );
-    // });
-    //
-    // bittrex.getticker( { market : 'BTC-LTC' }, function( data, err ) {
-    //     console.log( data );
-    // });
-    //  res.json({ronen:"ronen"});
 });
+
+//
+// router.get('/',function(req,res,next){
+//
+//     bittrex.getcandles({
+//         marketName: 'USDT-ETH',
+//         tickInterval: 'fiveMin', // intervals are keywords
+//     }, function( data, err ) {
+//         console.log( data );
+//         res.json(data);
+//     });
+//
+//
+//     // bittrex.getmarketsummary( { market : 'BTC-LTC'}, function( data, err ) {
+//     //     console.log( data );
+//     // });
+//     //
+//     // bittrex.getmarkethistory({ market : 'BTC-LTC' }, function( data, err ) {
+//     //     console.log( data );
+//     // });
+//     //
+//     // bittrex.getorderbook({ market : 'BTC-LTC', depth : 10, type : 'both' }, function( data, err ) {
+//     //     console.log( JSON.stringify(data) );
+//     // });
+//     //
+//     // bittrex.getticker( { market : 'BTC-LTC' }, function( data, err ) {
+//     //     console.log( data );
+//     // });
+//     //  res.json({ronen:"ronen"});
+// });
 
 /* Subscribe to a market an get constant updates!!. */
 // router.get('/', function(req, res, next) {
