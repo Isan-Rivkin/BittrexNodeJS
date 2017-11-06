@@ -6,9 +6,9 @@ var server = www.server;
 var io = require('socket.io')(server);
 
 
-module.exports= sayHelloInEnglish = function() {
-    return "HELLO";
-};
+// module.exports= sayHelloInEnglish = function() {
+//     return "HELLO";
+// };
 
 // config
 bittrex.options({
@@ -22,7 +22,7 @@ var ticker_returner = function(res,i,final,obj){
         res.json(obj);
     }
 };
-
+//
 io.on('connection',function(socket){
     console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
     socket.on('disconnect', function(){
@@ -39,8 +39,8 @@ router.get('/',function(req,res,next){
         if (data.M === 'updateExchangeState') {
             data.A.forEach(function(data_for) {
                // console.log('Market Update for '+ data_for.MarketName, data_for);
-               // res.json(data_for);
-                res.render('index',{title:"bittrex js file"});
+                res.json(data_for);
+                //res.render('bittrex',{title:"bittrex js file"});
 
             });
         }
