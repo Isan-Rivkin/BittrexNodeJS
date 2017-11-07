@@ -210,7 +210,7 @@ function constructTime(bittrexTime)
  * get state general
  */
 // getState
-var getStateTest = function(trigger_name,order){
+var getStateTest = function(trigger_name,order,callback){
     bittrex.getmarketsummary( { market : order.market}, function( data, err ) {
         var state = {status:true};
         if(err)
@@ -226,22 +226,23 @@ var getStateTest = function(trigger_name,order){
             state.coinMarketCap = data_[0];
             state.time = constructTime(state.data.TimeStamp);
             manager.trigger(trigger_name,state);
+            callback(state);
         });
     });
 };
-function placeOrder(trigger_name,order) {
+function placeOrder(trigger_name,order,callback) {
     if (order.delay != null)
     {
-        setTimeout(getState.bind(trigger_name,order), order.delay);
+        setTimeout(getState.bind(trigger_name,order,callback), order.delay);
     }
     else
     {
-        setTimeout(getState.bind(trigger_name,order), 0);
+        setTimeout(getState.bind(trigger_name,order,callback), 0);
     }
 };
 
-module.exports.order = function(trigger_name,order) {
-    placeOrder(trigger_name,order);
+module.exports.order = function(trigger_name,order,callback) {
+    placeOrder(trigger_name,order,callback);
 };
 
 module.exports.buy = function(trigger_name,order) {

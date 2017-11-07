@@ -4,7 +4,7 @@ var router = express.Router();
 var www = require('../bin/www');
 var server = www.server;
 var io = require('socket.io')(server);
-
+var order_api = require('../bittrex_api/bittrex_api');
 
 // module.exports= sayHelloInEnglish = function() {
 //     return "HELLO";
@@ -22,30 +22,43 @@ var ticker_returner = function(res,i,final,obj){
         res.json(obj);
     }
 };
-//
-io.on('connection',function(socket){
-    console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-    socket.on('disconnect', function(){
-        console.log('user disconnected');
-    })
-    socket.on('clicked', function(msg){
-        console.log('user-> ' + msg);
-    })
-    io.emit('broadcast', "i am server nice to meet");
-});
 router.get('/',function(req,res,next){
-
-    bittrex.websockets.subscribe(['USDT-ETH'], function(data, client) {
-        if (data.M === 'updateExchangeState') {
-            data.A.forEach(function(data_for) {
-               // console.log('Market Update for '+ data_for.MarketName, data_for);
-                res.json(data_for);
-                //res.render('bittrex',{title:"bittrex js file"});
-
-            });
-        }
+    var order = {
+    market:'USDT-ETH',
+    amount: 10,
+    rate: "LAST",
+    delay: 0,
+    type: 'SELL'
+    };
+    var trigger_name = "";
+    order_api.order(trigger_name,order,function(state){
+        res.json(state);
     });
 });
+//
+// io.on('connection',function(socket){
+//     console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+//     socket.on('disconnect', function(){
+//         console.log('user disconnected');
+//     })
+//     socket.on('clicked', function(msg){
+//         console.log('user-> ' + msg);
+//     })
+//     io.emit('broadcast', "i am server nice to meet");
+// });
+// router.get('/',function(req,res,next){
+//
+//     bittrex.websockets.subscribe(['USDT-ETH'], function(data, client) {
+//         if (data.M === 'updateExchangeState') {
+//             data.A.forEach(function(data_for) {
+//                // console.log('Market Update for '+ data_for.MarketName, data_for);
+//                 res.json(data_for);
+//                 //res.render('bittrex',{title:"bittrex js file"});
+//
+//             });
+//         }
+//     });
+// });
 
 //
 // router.get('/',function(req,res,next){
