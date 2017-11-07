@@ -191,3 +191,69 @@ type Candle struct {
               T: '2017-11-02T16:00:00',
               BV: 5963.52508814 } ] }
 
+
+   #######################################################################################################
+   #################################### get State current:  #####################################
+   #######################################################################################################
+
+   {
+      "status":true,
+      "order":{
+         "market":"USDT-ETH",
+         "amount":10,
+         "rate":"LAST",
+         "delay":0,
+         "type":"SELL"
+      },
+      "data":{
+         "MarketName":"USDT-ETH",
+         "High":303.95,
+         "Low":285.00000001,
+         "Volume":18364.11592174,
+         "Last":290.5,
+         "BaseVolume":5383075.31908729,
+         "TimeStamp":"2017-11-07T18:26:11.077",
+         "Bid":290,
+         "Ask":290.5,
+         "OpenBuyOrders":1894,
+         "OpenSellOrders":4504,
+         "PrevDay":299.58,
+         "Created":"2017-04-20T17:26:37.647"
+      },
+      "received":{
+         "base":"USDT",
+         "trade":"ETH",
+         "rate":290.5,
+         "finalAmount":2905
+      },
+      "coinMarketCap":{
+         "id":"ethereum",
+         "name":"Ethereum",
+         "symbol":"ETH",
+         "rank":"2",
+         "price_usd":"294.044",
+         "price_btc":"0.0414607",
+         "24h_volume_usd":"607852000.0",
+         "market_cap_usd":"28105530392.0",
+         "available_supply":"95582737.0",
+         "total_supply":"95582737.0",
+         "max_supply":null,
+         "percent_change_1h":"0.79",
+         "percent_change_24h":"-2.56",
+         "percent_change_7d":"-4.32",
+         "last_updated":"1510079051"
+      },
+      "time":{
+         "BittrexTime":"2017-11-07T18:26:11.077",
+         "OSTime":"20:26:50 GMT+0200 (IST)",
+         "Day_Name":"Tue",
+         "Month_Name":"Nov",
+         "Month":11,
+         "Year":"2017",
+         "Hours":20,
+         "Minute":26,
+         "Seconds":50,
+         "Milliseconds":684,
+         "OSDate":"Tue Nov 07 2017"
+      }
+   }

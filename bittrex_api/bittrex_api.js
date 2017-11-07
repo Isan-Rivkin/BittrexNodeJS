@@ -7,9 +7,8 @@ var manager = {};
 var error_trigger = "";
 var coins_map = null;
 
-
 if (coins_map == null) {
-    var file = './coin_map.json';
+    var file = './bittrex_api/coin_map.json';
     jsonfile.readFile(file, function (err, obj) {
         if(err)
             console.log(err);
@@ -210,13 +209,14 @@ function constructTime(bittrexTime)
  * get state general
  */
 // getState
-var getStateTest = function(trigger_name,order,callback){
+var getState = function(trigger_name,order,callback){
     bittrex.getmarketsummary( { market : order.market}, function( data, err ) {
         var state = {status:true};
-        if(err)
+        if(err || data ==null)
         {
             state.err = err;
             manager.trigger(error_trigger,err);
+            return;
         }
         state.order = order;
         state.data = data.result[0];
@@ -231,14 +231,7 @@ var getStateTest = function(trigger_name,order,callback){
     });
 };
 function placeOrder(trigger_name,order,callback) {
-    if (order.delay != null)
-    {
-        setTimeout(getState.bind(trigger_name,order,callback), order.delay);
-    }
-    else
-    {
-        setTimeout(getState.bind(trigger_name,order,callback), 0);
-    }
+    getState(trigger_name,order,callback);
 };
 
 module.exports.order = function(trigger_name,order,callback) {

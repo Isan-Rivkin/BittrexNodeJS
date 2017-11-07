@@ -1,14 +1,13 @@
 var bittrex = require('node-bittrex-api');
 var express = require('express');
 var router = express.Router();
-var www = require('../bin/www');
-var server = www.server;
-var io = require('socket.io')(server);
-var order_api = require('../bittrex_api/bittrex_api');
+// var www = require('../bin/www');
+// var server = www.server;
+// var io = require('socket.io')(server);
+var evento = require("evento");
 
-// module.exports= sayHelloInEnglish = function() {
-//     return "HELLO";
-// };
+var order_api = require('../bittrex_api/bittrex_api');
+order_api.setEventManager(evento,"error");
 
 // config
 bittrex.options({
@@ -16,12 +15,7 @@ bittrex.options({
     API_SECRET:'4b912eb00861428289e0cdfeedb4f49e',
 });
 
-var ticker_returner = function(res,i,final,obj){
-    console.log("inside returner i:" + i + " final " + final);
-    if((i==final)){
-        res.json(obj);
-    }
-};
+
 router.get('/',function(req,res,next){
     var order = {
     market:'USDT-ETH',
@@ -32,7 +26,9 @@ router.get('/',function(req,res,next){
     };
     var trigger_name = "";
     order_api.order(trigger_name,order,function(state){
-        res.json(state);
+        console.log(state);
+        res.render('bittrex',{state:state});
+        //res.json(state);
     });
 });
 //
