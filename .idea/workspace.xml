@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="34d318d3-7d33-40b8-a6ff-d460820a5bc0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bittrex_api/bittrex_api.js" afterPath="$PROJECT_DIR$/bittrex_api/bittrex_api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/blueprints_bittrex.txt" afterPath="$PROJECT_DIR$/data/blueprints_bittrex.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/bittrex.js" afterPath="$PROJECT_DIR$/routes/bittrex.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bittrex.jade" afterPath="$PROJECT_DIR$/views/bittrex.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
     </list>
@@ -34,8 +31,8 @@
       <file leaf-file-name="bittrex.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/bittrex.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+            <state relative-caret-position="102">
+              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -44,8 +41,8 @@
       <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="126">
+              <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -64,9 +61,15 @@
       <file leaf-file-name="bittrex.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/bittrex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <marker date="1510136006544" expanded="true" signature="1726:1727" ph="{...}" />
+                <marker date="1510136006544" expanded="true" signature="1731:2649" ph="//..." />
+                <marker date="1510136006544" expanded="true" signature="2651:2705" ph="/*...*/" />
+                <marker date="1510136006544" expanded="true" signature="2706:3107" ph="//..." />
+                <marker date="1510136006544" expanded="true" signature="3134:3675" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,8 +77,8 @@
       <file leaf-file-name="blueprints_bittrex.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/blueprints_bittrex.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="215" column="19" lean-forward="true" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="19" />
+            <state relative-caret-position="3474">
+              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/project_modules_bittrex/evento_test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+              <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -116,12 +119,9 @@
       <file leaf-file-name="bittrex_api.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bittrex_api/bittrex_api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-              <folding>
-                <element signature="e#693#1229#0" expanded="false" />
-                <element signature="e#1366#1918#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="287" column="0" lean-forward="false" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/bittrex_api/bittrex_api.js" />
         <option value="$PROJECT_DIR$/data/blueprints_bittrex.txt" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/routes/bittrex.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/views/bittrex.jade" />
       </list>
     </option>
@@ -203,44 +203,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="BittrexAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BittrexAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="BittrexNodeJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BittrexNodeJS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BittrexAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BittrexAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="bittrex_api" type="462c0819:PsiDirectoryNode" />
+              <item name="BittrexNodeJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BittrexNodeJS" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BittrexAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BittrexAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="BittrexNodeJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BittrexNodeJS" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BittrexAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BittrexAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="project_modules_bittrex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BittrexAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BittrexAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BittrexAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BittrexAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="BittrexNodeJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BittrexNodeJS" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,22 +277,23 @@
       <workItem from="1510044179699" duration="4180000" />
       <workItem from="1510049982336" duration="9031000" />
       <workItem from="1510077136124" duration="4070000" />
+      <workItem from="1510136080434" duration="1931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41148000" />
+    <option name="totallyTimeSpent" value="43079000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2239" y="60" width="1922" height="1092" extended-state="6" />
+    <frame x="2239" y="60" width="1857" height="970" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24114583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.432243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43251532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -330,7 +322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -338,7 +329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -370,7 +360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5526">
           <caret line="307" column="87" lean-forward="false" selection-start-line="307" selection-start-column="80" selection-end-line="307" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -386,7 +375,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
+          <folding>
+            <marker date="1510136006544" expanded="true" signature="1726:1727" ph="{...}" />
+            <marker date="1510136006544" expanded="true" signature="1731:2649" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="2651:2705" ph="/*...*/" />
+            <marker date="1510136006544" expanded="true" signature="2706:3107" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="3134:3675" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -394,7 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -402,7 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -434,7 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5526">
           <caret line="307" column="87" lean-forward="false" selection-start-line="307" selection-start-column="80" selection-end-line="307" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -450,7 +442,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510136006544" expanded="true" signature="1726:1727" ph="{...}" />
+            <marker date="1510136006544" expanded="true" signature="1731:2649" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="2651:2705" ph="/*...*/" />
+            <marker date="1510136006544" expanded="true" signature="2706:3107" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="3134:3675" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -458,7 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -466,7 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -490,7 +486,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
+          <folding>
+            <marker date="1510136006544" expanded="true" signature="1726:1727" ph="{...}" />
+            <marker date="1510136006544" expanded="true" signature="1731:2649" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="2651:2705" ph="/*...*/" />
+            <marker date="1510136006544" expanded="true" signature="2706:3107" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="3134:3675" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -498,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5526">
           <caret line="307" column="87" lean-forward="false" selection-start-line="307" selection-start-column="80" selection-end-line="307" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,7 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,7 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +551,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1510136006544" expanded="true" signature="1726:1727" ph="{...}" />
+            <marker date="1510136006544" expanded="true" signature="1731:2649" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="2651:2705" ph="/*...*/" />
+            <marker date="1510136006544" expanded="true" signature="2706:3107" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="3134:3675" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -611,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="887">
           <caret line="307" column="87" lean-forward="false" selection-start-line="307" selection-start-column="80" selection-end-line="307" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,19 +676,16 @@
     <entry file="file://$PROJECT_DIR$/project_modules_bittrex/evento_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bittrex_api/bittrex_api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-          <folding>
-            <element signature="e#693#1229#0" expanded="false" />
-            <element signature="e#1366#1918#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="287" column="0" lean-forward="false" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -700,32 +699,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/blueprints_bittrex.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="215" column="19" lean-forward="true" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="3474">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/bittrex.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1510136006544" expanded="true" signature="1726:1727" ph="{...}" />
+            <marker date="1510136006544" expanded="true" signature="1731:2649" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="2651:2705" ph="/*...*/" />
+            <marker date="1510136006544" expanded="true" signature="2706:3107" ph="//..." />
+            <marker date="1510136006544" expanded="true" signature="3134:3675" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/bittrex.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        <state relative-caret-position="102">
+          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
           <folding />
         </state>
       </provider>

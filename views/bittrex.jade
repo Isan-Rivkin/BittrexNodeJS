@@ -3,50 +3,51 @@ extends layout
 block content
     h1= title
     p Order SnapShot: to #{title}
-
-    div(class="d-inline bg-success").container
-        p #{state.order.amount}
-        p #{state.order.market}
-        p #{state.order.rate}
-        p #{state.order.delay}
-        p #{state.order.type}
-    div(class="d-inline bg-success").container
-        p #{state.data.MarketName}
-        p #{state.data.High}
-        p #{state.data.Low}
-        p #{state.data.Volume}
-        p #{state.data.Last}
-        p #{state.data.BaseVolume}
-        p #{state.data.TimeStamp}
-        p #{state.data.Bid}
-        p #{state.data.Ask}
-        p #{state.data.OpenBuyOrders}
-        p #{state.data.PrevDay}
-        p #{state.data.Created}
-    div(class="d-inline bg-success").container
-        p #{state.received.base}
-        p #{state.received.trade}
-        p #{state.received.rate}
-        p #{state.received.finalAmount}
-    div(class="d-inline bg-success").container
-        p #{state.coinMarketCap.id}
-        p #{state.coinMarketCap.name}
-        p #{state.coinMarketCap.symbol}
-        p #{state.coinMarketCap.rank}
-        p #{state.coinMarketCap.price_usd}
-        p #{state.coinMarketCap.price_btc}
-        p #{state.coinMarketCap.market_cap_usd}
-        p #{state.coinMarketCap.available_supply}
-        p #{state.coinMarketCap.total_supply}
-        p #{state.coinMarketCap.max_supply}
-        p #{state.coinMarketCap.percent_change_1h}
-        p #{state.coinMarketCap.percent_change_24h}
-        p #{state.coinMarketCap.percent_change_7d}
-        p #{state.coinMarketCap.last_updated}
-    div(class="d-inline bg-success").container
-        p #{state.time.BittrexTime}
-        p #{state.time.OSTime}
-        p #{state.time.OSDate}
+    div.container
+        div.row
+            div.col
+                p #{state.order.amount}
+                p #{state.order.market}
+                p #{state.order.rate}
+                p #{state.order.delay}
+                p #{state.order.type}
+            div.col
+                p #{state.data.MarketName}
+                p #{state.data.High}
+                p #{state.data.Low}
+                p #{state.data.Volume}
+                p #{state.data.Last}
+                p #{state.data.BaseVolume}
+                p #{state.data.TimeStamp}
+                p #{state.data.Bid}
+                p #{state.data.Ask}
+                p #{state.data.OpenBuyOrders}
+                p #{state.data.PrevDay}
+                p #{state.data.Created}
+            div.col
+                p #{state.received.base}
+                p #{state.received.trade}
+                p #{state.received.rate}
+                p #{state.received.finalAmount}
+            div.col
+                p #{state.coinMarketCap.id}
+                p #{state.coinMarketCap.name}
+                p #{state.coinMarketCap.symbol}
+                p #{state.coinMarketCap.rank}
+                p #{state.coinMarketCap.price_usd}
+                p #{state.coinMarketCap.price_btc}
+                p #{state.coinMarketCap.market_cap_usd}
+                p #{state.coinMarketCap.available_supply}
+                p #{state.coinMarketCap.total_supply}
+                p #{state.coinMarketCap.max_supply}
+                p #{state.coinMarketCap.percent_change_1h}
+                p #{state.coinMarketCap.percent_change_24h}
+                p #{state.coinMarketCap.percent_change_7d}
+                p #{state.coinMarketCap.last_updated}
+            div.col
+                p #{state.time.BittrexTime}
+                p #{state.time.OSTime}
+                p #{state.time.OSDate}
 
 
 
