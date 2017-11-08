@@ -8,6 +8,7 @@ block content
         div.row
             div.col
                 h2 Order
+                p The order put in place details (BUY/SELL)
                 p.heading Amount:
                 p #{state.order.amount}
                 p.heading Market:
@@ -20,6 +21,7 @@ block content
                 p #{state.order.type}
             div.col
                 h2 Market Data
+                p Snapshot from Bittrex for the current Market.
                 p.heading MarketName:
                 p #{state.data.MarketName}
                 p.heading High:
@@ -46,6 +48,7 @@ block content
                 p #{state.data.Created}
             div.col
                 h2 Recieved
+                p Demonstrating the Recieved amount from the Order
                 p.heading Base:
                 p #{state.received.base}
                 p.heading Trade:
@@ -56,6 +59,7 @@ block content
                 p #{state.received.finalAmount}
             div.col
                 h2 Global
+                p Global Market Data
                 p.heading ID:
                 p #{state.coinMarketCap.id}
                 p.heading Name:
@@ -74,8 +78,6 @@ block content
                 p #{state.coinMarketCap.available_supply}
                 p.heading Total Supply:
                 p #{state.coinMarketCap.total_supply}
-                p.heading Max Supply:
-                p #{state.coinMarketCap.max_supply}
                 p.heading % Change 1h:
                 p #{state.coinMarketCap.percent_change_1h}
                 p.heading % Change 24h:
@@ -86,6 +88,7 @@ block content
                 p #{state.coinMarketCap.last_updated}
             div.col
                 h2 TimeStamp
+                p TimeStamping the order
                 p.heading Bittrex Time:
                 p #{state.time.BittrexTime}
                 p.heading OS Time:
