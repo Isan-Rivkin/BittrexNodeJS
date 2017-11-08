@@ -86,15 +86,16 @@ block content
                 p #{state.coinMarketCap.percent_change_7d}
                 p.heading Last Updated:
                 p #{state.coinMarketCap.last_updated}
-            div.col
-                h2 TimeStamp
-                p TimeStamping the order
-                p.heading Bittrex Time:
-                p #{state.time.BittrexTime}
-                p.heading OS Time:
-                p #{state.time.OSTime}
-                p.heading OS Date:
-                p #{state.time.OSDate}
+            div(class="panel panel-primary").col
+                div(class="panel-heading")
+                    h2 TimeStamp
+                    p TimeStamping the order
+                    p.heading Bittrex Time:
+                    p #{state.time.BittrexTime}
+                    p.heading OS Time:
+                    p #{state.time.OSTime}
+                    p.heading OS Date:
+                    p #{state.time.OSDate}
 
 
 
