@@ -1,52 +1,96 @@
 extends layout
 
 block content
+    link(rel='stylesheet', href='/stylesheets/bittrex_state.css')
     h1= title
     p Order SnapShot: to #{title}
     div.container
         div.row
             div.col
+                h2 Order
+                p.heading Amount:
                 p #{state.order.amount}
+                p.heading Market:
                 p #{state.order.market}
+                p.heading Rate:
                 p #{state.order.rate}
+                p.heading Delay:
                 p #{state.order.delay}
+                p.heading Type:
                 p #{state.order.type}
             div.col
+                h2 Market Data
+                p.heading MarketName:
                 p #{state.data.MarketName}
+                p.heading High:
                 p #{state.data.High}
+                p.heading Low:
                 p #{state.data.Low}
+                p.heading Volume:
                 p #{state.data.Volume}
+                p.heading Last:
                 p #{state.data.Last}
+                p.heading BaseVolume:
                 p #{state.data.BaseVolume}
+                p.heading TimeStamp:
                 p #{state.data.TimeStamp}
+                p.heading Bid
                 p #{state.data.Bid}
+                p.heading Ask
                 p #{state.data.Ask}
+                p.heading Open Orders:
                 p #{state.data.OpenBuyOrders}
+                p.heading Previous Day:
                 p #{state.data.PrevDay}
+                p.heading Created:
                 p #{state.data.Created}
             div.col
+                h2 Recieved
+                p.heading Base:
                 p #{state.received.base}
+                p.heading Trade:
                 p #{state.received.trade}
+                p.heading Rate:
                 p #{state.received.rate}
+                p.heading Final Amount:
                 p #{state.received.finalAmount}
             div.col
+                h2 Global
+                p.heading ID:
                 p #{state.coinMarketCap.id}
+                p.heading Name:
                 p #{state.coinMarketCap.name}
+                p.heading Symbol:
                 p #{state.coinMarketCap.symbol}
+                p.heading Rank:
                 p #{state.coinMarketCap.rank}
+                p.heading Price USD:
                 p #{state.coinMarketCap.price_usd}
+                p.heading Price BTC:
                 p #{state.coinMarketCap.price_btc}
+                p.heading MarketCap USD:
                 p #{state.coinMarketCap.market_cap_usd}
+                p.heading Available Supply:
                 p #{state.coinMarketCap.available_supply}
+                p.heading Total Supply:
                 p #{state.coinMarketCap.total_supply}
+                p.heading Max Supply:
                 p #{state.coinMarketCap.max_supply}
+                p.heading % Change 1h:
                 p #{state.coinMarketCap.percent_change_1h}
+                p.heading % Change 24h:
                 p #{state.coinMarketCap.percent_change_24h}
+                p.heading % Change 7d:
                 p #{state.coinMarketCap.percent_change_7d}
+                p.heading Last Updated:
                 p #{state.coinMarketCap.last_updated}
             div.col
+                h2 TimeStamp
+                p.heading Bittrex Time:
                 p #{state.time.BittrexTime}
+                p.heading OS Time:
                 p #{state.time.OSTime}
+                p.heading OS Date:
                 p #{state.time.OSDate}
 
 
