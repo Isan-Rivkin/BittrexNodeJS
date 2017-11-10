@@ -145,6 +145,7 @@ function constructOrderReceived(order,market_data){
     var rate = getRate(order,market_data);
     received.rate = rate;
     received.finalAmount = calcOrder(rate,order);
+    console.log("testing:" + received.finalAmount);
     return received;
 }
 function calcOrder(rate,order){
@@ -202,6 +203,7 @@ function constructTime(bittrexTime)
     var d= parseDate(time.OSTime).toDateString();
     time.OSTime = t;
     time.OSDate = d;
+
     return time;
 }
 

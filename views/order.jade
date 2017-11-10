@@ -1,0 +1,27 @@
+extends layout
+block content
+    link(rel='stylesheet', href='/stylesheets/bittrex_state.css')
+    h1= title
+    p Order SnapShot: to #{title}
+    div.container
+        div.row
+            form(method ="post" action = "/b")
+                .form-group
+                    label(for='exampleInputEmail1') Market Name
+                    input#exampleInputEmail1.form-control(name = "market", type='text', aria-describedby='emailHelp', placeholder='Enter email')
+                    small#emailHelp.form-text.text-muted choose market i.e USDT-ETH.
+                .form-group
+                    label(for='exampleInputPassword1') Amount
+                    input#exampleInputPassword1.form-control(type='text', placeholder='Amount', name="amount")
+                .form-group
+                    label(for='exampleSelect1') Rate Selection
+                    select(name="rateList")#exampleSelect1.form-control
+                        option LAST
+                        option BID
+                        option ASK
+                .form-group
+                    label(for='exampleSelect22') Order Type
+                    select(name="orderType")#exampleSelect22.form-control
+                        option Buy
+                        option Sell
+                button.btn.btn-primary(type='submit') Order

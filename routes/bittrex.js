@@ -18,6 +18,41 @@ bittrex.options({
 
 router.get('/',function(req,res,next){
     var order = {
+        market:'USDT-ETH',
+        amount: 10,
+        rate: "LAST",
+        delay: 0,
+        type: 'SELL'
+    };
+    var trigger_name = "";
+    order_api.order(trigger_name,order,function(state){
+        console.log(state);
+        res.render('order',{state:state});
+        //res.json(state);
+    });
+});
+
+router.post('/',function(req,res,next){
+    var amount = req.body.amount;
+    var market=  req.body.market;
+    var order_type = req.body.orderType;
+    var rate = req.body.rateList;
+    var order = {}
+    order.market = market;
+    order.amount = parseInt(amount);
+    order.rate = rate;
+    order.delay =0;
+    order.type = order_type;
+    var trigger_name = "";
+    order_api.order(trigger_name,order,function(state){
+        console.log(state);
+        res.render('bittrex',{state:state});
+        //res.json(state);
+    });
+});
+/*
+router.get('/',function(req,res,next){
+    var order = {
     market:'USDT-ETH',
     amount: 10,
     rate: "LAST",
@@ -30,7 +65,7 @@ router.get('/',function(req,res,next){
         res.render('bittrex',{state:state});
         //res.json(state);
     });
-});
+});*/
 //
 // io.on('connection',function(socket){
 //     console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
