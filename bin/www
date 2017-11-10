@@ -22,22 +22,7 @@ app.set('port', port);
 var server = http.createServer(app);
 
 // socket.io
-//var io = require('socket.io')(server);
-//var bittrex=  require('../routes/bittrex');
-//bittrex.sayHelloInEnglish();
-//exports.io = io;
-
-// io.on('connection',function(socket){
-//   console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-//     socket.on('disconnect', function(){
-//         console.log('user disconnected');
-//     })
-//     socket.on('clicked', function(msg){
-//         console.log('user-> ' + msg);
-//     })
-//     io.emit('broadcast', "i am server nice to meet");
-// });
-
+var io = require('socket.io')(server);
 /**
  * Listen on provided port, on all network interfaces.
  */
@@ -106,5 +91,8 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-module.exports  = server;
-
+// all modules that require io object.
+var index_module = require('../routes/index');
+index_module.setIO(io);
+var bittrex_module = require('../routes/bittrex');
+bittrex_module.setIO(io);

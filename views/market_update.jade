@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    button(onclick='clicked()') click me
+    <div id="info"> </div>
+    script(src='/socket.io/socket.io.js')
+    script.
+        var socket = io();
+        socket.on('market_update',function(msg){
+            console.log('from the server:' + msg);
+            document.getElementById("info").innerHTML = msg.name + ' ' + JSON.stringify(msg.data);
+        });

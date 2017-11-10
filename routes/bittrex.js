@@ -50,114 +50,27 @@ router.post('/',function(req,res,next){
         //res.json(state);
     });
 });
-/*
-router.get('/',function(req,res,next){
-    var order = {
-    market:'USDT-ETH',
-    amount: 10,
-    rate: "LAST",
-    delay: 0,
-    type: 'SELL'
-    };
-    var trigger_name = "";
-    order_api.order(trigger_name,order,function(state){
-        console.log(state);
-        res.render('bittrex',{state:state});
-        //res.json(state);
+
+router.get('/market_update',function(req,res,next){
+    bittrex.websockets.subscribe(['USDT-ETH'], function(data, client) {
+        if (data.M === 'updateExchangeState') {
+            data.A.forEach(function(data_for) {
+                console.log('Market Update for '+ data_for.MarketName, data_for);
+                io.emit('market_update', {name:data_for.MarketName,data:data_for});
+            });
+        }
     });
-});*/
-//
-// io.on('connection',function(socket){
-//     console.log('user connected @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-//     socket.on('disconnect', function(){
-//         console.log('user disconnected');
-//     })
-//     socket.on('clicked', function(msg){
-//         console.log('user-> ' + msg);
-//     })
-//     io.emit('broadcast', "i am server nice to meet");
-// });
-// router.get('/',function(req,res,next){
-//
-//     bittrex.websockets.subscribe(['USDT-ETH'], function(data, client) {
-//         if (data.M === 'updateExchangeState') {
-//             data.A.forEach(function(data_for) {
-//                // console.log('Market Update for '+ data_for.MarketName, data_for);
-//                 res.json(data_for);
-//                 //res.render('bittrex',{title:"bittrex js file"});
-//
-//             });
-//         }
-//     });
-// });
+    res.render('market_update', {title:"ronen"});
+});
 
-//
-// router.get('/',function(req,res,next){
-//
-//     bittrex.getcandles({
-//         marketName: 'USDT-ETH',
-//         tickInterval: 'fiveMin', // intervals are keywords
-//     }, function( data, err ) {
-//         console.log( data );
-//         res.json(data);
-//     });
-//
-//
-//     // bittrex.getmarketsummary( { market : 'BTC-LTC'}, function( data, err ) {
-//     //     console.log( data );
-//     // });
-//     //
-//     // bittrex.getmarkethistory({ market : 'BTC-LTC' }, function( data, err ) {
-//     //     console.log( data );
-//     // });
-//     //
-//     // bittrex.getorderbook({ market : 'BTC-LTC', depth : 10, type : 'both' }, function( data, err ) {
-//     //     console.log( JSON.stringify(data) );
-//     // });
-//     //
-//     // bittrex.getticker( { market : 'BTC-LTC' }, function( data, err ) {
-//     //     console.log( data );
-//     // });
-//     //  res.json({ronen:"ronen"});
-// });
+//module.exports = router;
+module.exports = {
+    router:router,
+    setIO: function(iop){
+        io = iop;
+        io.on('connection',function(socket){
 
-/* Subscribe to a market an get constant updates!!. */
-// router.get('/', function(req, res, next) {
-//     bittrex.websockets.subscribe(['USDT-ETH'], function(data, client) {
-//         if (data.M === 'updateExchangeState') {
-//             data.A.forEach(function(data_for) {
-//                 console.log('Market Update for '+ data_for.MarketName, data_for);
-//
-//             });
-//         }
-//     });
-//     res.json({waiting:"waiting"});
-//
-// });
+        });
+    }
+}
 
-module.exports = router;
-//
-// function getAllMarketSummaries(callback){
-//     bittrex.getmarketsummaries( function( data, err ) {
-//         if (err) {
-//             return console.error(err);
-//         }
-//         callback(data);
-//         // data object
-//     });
-// }
-// function getAllTickers(){
-//     getAllMarketSummaries(function(data){
-//         for( var i in data.result ) {
-//             bittrex.getticker( { market : data.result[i].MarketName }, function( ticker ) {
-//                 console.log( ticker );
-//             })
-//     }
-// }
-// }
-
-/**
- * Bittrex:
- Key:1008ea4bd3544382a7e5bebd12ecdd66
- Secret:4b912eb00861428289e0cdfeedb4f49e
- */
