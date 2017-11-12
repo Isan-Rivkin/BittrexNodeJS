@@ -8,11 +8,17 @@ var error_trigger = "";
 var coins_map = null;
 
 if (coins_map == null) {
-    var file = './bittrex_api/coin_map.json';
+    var file = '../bittrex_api/coin_map.json';
     jsonfile.readFile(file, function (err, obj) {
         if(err)
+        {
             console.log(err);
-        coins_map = obj;
+
+        }
+        else
+        {
+            coins_map = obj;
+        }
     });
 }
 
@@ -249,41 +255,58 @@ module.exports.sell = function(trigger_name,order) {
 };
 
 
+/**
+ * Dijkstra swapping calculations
+ */
+var tickers_result = [];
+function collector(limit,current,object,callback) {
+    tickers_result.push(object);
+    if(limit == current) {
+        callback(tickers_result);
+        current = 0;
+    }
+}
+
+/**
+ * all tickers
+ * @type {number}
+ */
+
+function getAllTickers(callback){
+    var counter = 0;
+    bittrex.getmarketsummaries( function( data, err ) {
+        if (err) {
+            return console.error(err);
+        }
+        for( var i in data.result ) {
+            console.log(counter);
+            bittrex.getticker( { market : data.result[i].MarketName }, function( ticker ) {
+                ticker.name = data.result[i].MarketName;
+                collector(Math.max(0,data.result.length-1),counter,ticker,callback);
+                counter ++;
+            });
+        }
+    });
+}
 
 /**
  *  TEST
  */
 
-// getState
-// var getStateTest = function(trigger_name,order){
-//     bittrex.getmarketsummary( { market : order.market}, function( data, err ) {
-//         var state = {status:true};
-//         if(err)
-//         {
-//             state.err = err;
-//             console.log('error:' + err);
-//         }
-//         state.order = order;
-//         state.data = data.result[0];
-//         state.received = constructOrderReceived(order,data);
-//
-//         url = 'http://api.coinmarketcap.com/v1/ticker/'+coins_map[state.received.trade]+'/?convert=USD';
-//         client.get(url, function (data_, response) {
-//             state.coinMarketCap = data_[0];
-//             state.time = constructTime(state.data.TimeStamp);
-//             console.log(JSON.stringify(state,null,2));
-//         });
-//     });
-// };
 
-// test case
 //
-// var order = {
-//     market:'USDT-ETH',
-//     amount: 10,
-//     rate: "LAST",
-//     delay: 0,
-//     type: 'SELL'
-// };
-// getStateTest("",order);
+// myList = ['USDT-ETH','BTC-ETH','USDT-NEO'];
+//
+// loadTickers(myList,function(tickers){
+//     console.log(tickers);
+// });
+
+getAllTickers(function(tickers){
+    console.log(tickers);
+    //console.log('some =>' + tickers.length);
+});
+
+
+
+
 
