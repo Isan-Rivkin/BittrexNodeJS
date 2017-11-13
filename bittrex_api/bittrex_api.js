@@ -6,8 +6,17 @@ var jsonfile = require('jsonfile');
 var manager = {};
 var error_trigger = "";
 var coins_map = null;
+coins_map= {
+    ETH: "ethereum",
+    NEO: "neo",
+    USDT: "tether",
+    BTC: "bitcoin",
+    LTC: "litecoin",
+    OMG: "omisego",
+    LSK: "lisk"
+}
 
-if (coins_map == null) {
+if (coins_map == null && false) {
     var file = '../bittrex_api/coin_map.json';
     jsonfile.readFile(file, function (err, obj) {
         if(err)
@@ -258,6 +267,21 @@ module.exports.sell = function(trigger_name,order) {
 /**
  * Dijkstra swapping calculations
  */
+ // extract BASE and COIN from 'ETH-NEO'
+function seperateCoins(market_coins){
+  var market ={};
+  temp = market_coins.split('-');
+  market.base = temp[0];
+  market.coin = temp[1];
+  return market;
+}
+// extract from 'ETH-XME' -> rate{base:'ETH',trade:'XME',rate:'0.00678'}
+function buildMarketRate(market_obj){
+  var rate = seperateCoins(market_obj.MarketName);
+  rate._rate = market_obj.Last;
+  return rate;
+}
+
 var tickers_result = [];
 function collector(limit,current,object,callback) {
     tickers_result.push(object);
@@ -266,28 +290,29 @@ function collector(limit,current,object,callback) {
         current = 0;
     }
 }
-
+function prepeareGraph(tickers,callback){
+    var rates_list = [];
+    let coins_seperated = new Set();
+    for(i in tickers.result){
+        var rate  =buildMarketRate(tickers.result[i]);
+        //rates_list[tickers.result[i].MarketName]= rate;
+        rates_list.push(rate);
+        coins_seperated.add(rate.coin);
+    }
+    callback(coins_seperated,rates_list);
+  };
 /**
  * all tickers
  * @type {number}
  */
+
  var counter = 0;
-function getAllTickers(callback){
-    // var counter = 0;
+module.exports.getAllTickers= function(callback){
     bittrex.getmarketsummaries( function( data, err ) {
         if (err) {
             return console.error(err);
         }
-        callback(data);
-        // for( var i in data.result ) {
-        //     console.log('TRUE data size:'+ data.result.length);
-        //     console.log('good ====> ',data.result[i]);
-        //     bittrex.getticker( { market : data.result[i].MarketName }, function( ticker ) {
-        //         ticker.name = data.result[i].MarketName;
-        //         collector(Math.max(0,ticker.result.length-1),counter,ticker,callback);
-        //         counter ++;
-        //     });
-        // }
+        prepeareGraph(data,callback);
     });
 }
 
@@ -296,25 +321,10 @@ function getAllTickers(callback){
  */
 
 
-//
-// myList = ['USDT-ETH','BTC-ETH','USDT-NEO'];
-//
-// loadTickers(myList,function(tickers){
-//     console.log(tickers);
-// });
-
-getAllTickers(function(tickers){
-    //console.log(tickers);
-    for(i in tickers.result)
-    {
-        console.log('done size: ', tickers.result[i].MarketName);
-    }
-    //console.log(tickers[0]);
-    // for(var i in tickers){
-    //     console.log(tickers[i].name);
-    // }
-    //console.log('some =>' + tickers.length);
-});
+// getAllTickers(function(nodes,rates_list){
+//     console.log(rates_list);
+//     console.log(nodes);
+//   });
 
 
 

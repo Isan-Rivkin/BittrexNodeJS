@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34d318d3-7d33-40b8-a6ff-d460820a5bc0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bittrex_api/bittrex_api.js" afterPath="$PROJECT_DIR$/bittrex_api/bittrex_api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_modules_bittrex/side_projects/prices_graph/graph.js" afterPath="$PROJECT_DIR$/project_modules_bittrex/side_projects/prices_graph/graph.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,9 +24,27 @@
       <file leaf-file-name="www" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="1746">
               <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-              <folding />
+              <folding>
+                <marker date="1510352479632" expanded="true" signature="21:52" ph="/** Module dependencies. ...*/" />
+                <marker date="1510352479632" expanded="true" signature="163:221" ph="/** Get port from environment and store in Express. ...*/" />
+                <marker date="1510352479632" expanded="true" signature="301:331" ph="/** Create HTTP server. ...*/" />
+                <marker date="1510352479632" expanded="true" signature="423:485" ph="/** Listen on provided port, on all network interfaces. ...*/" />
+                <marker date="1510352479632" expanded="true" signature="575:635" ph="/** Normalize a port into a number, string, or false. ...*/" />
+                <marker date="1510352479632" expanded="true" signature="665:837" ph="{...}" />
+                <marker date="1510352479632" expanded="true" signature="719:758" ph="{...}" />
+                <marker date="1510352479632" expanded="true" signature="777:818" ph="{...}" />
+                <marker date="1510352479632" expanded="true" signature="839:895" ph="/** Event listener for HTTP server &quot;error&quot; event. ...*/" />
+                <marker date="1510352479632" expanded="true" signature="921:1407" ph="{...}" />
+                <marker date="1510352479632" expanded="true" signature="957:979" ph="{...}" />
+                <marker date="1510352479632" expanded="true" signature="1143:1405" ph="{...}" />
+                <marker date="1510352479632" expanded="true" signature="1163:1260" ph="..." />
+                <marker date="1510352479632" expanded="true" signature="1283:1369" ph="..." />
+                <marker date="1510352479632" expanded="true" signature="1382:1401" ph="..." />
+                <marker date="1510352479632" expanded="true" signature="1409:1469" ph="/** Event listener for HTTP server &quot;listening&quot; event. ...*/" />
+                <marker date="1510352479632" expanded="true" signature="1494:1647" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,9 +72,18 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="216">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-              <folding />
+              <folding>
+                <marker date="1510351396630" expanded="true" signature="127:147" ph="/*...*/" />
+                <marker date="1510351396630" expanded="true" signature="189:237" ph="{...}" />
+                <marker date="1510351396630" expanded="true" signature="285:689" ph="{&quot;router&quot;: router...}" />
+                <marker date="1510351396630" expanded="true" signature="330:687" ph="{...}" />
+                <marker date="1510351396630" expanded="true" signature="391:679" ph="{...}" />
+                <marker date="1510351396630" expanded="true" signature="488:537" ph="{...}" />
+                <marker date="1510351396630" expanded="true" signature="577:622" ph="{...}" />
+                <marker date="1510351396630" expanded="true" signature="690:792" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,9 +91,24 @@
       <file leaf-file-name="bittrex.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/bittrex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="1116">
               <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-              <folding />
+              <folding>
+                <marker date="1510352536839" expanded="true" signature="108:213" ph="//..." />
+                <marker date="1510352536839" expanded="true" signature="372:474" ph="{&quot;API_KEY&quot;: '1008ea4bd3544382a7e5bebd12ecdd66'...}" />
+                <marker date="1510352536839" expanded="true" signature="516:841" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="534:649" ph="{&quot;market&quot;: 'USDT-ETH'...}" />
+                <marker date="1510352536839" expanded="true" signature="732:837" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="883:1375" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="1264:1371" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="1429:1850" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="1501:1796" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="1549:1790" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="1597:1778" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="1898:2028" ph="{&quot;router&quot;: router...}" />
+                <marker date="1510352536839" expanded="true" signature="1943:2026" ph="{...}" />
+                <marker date="1510352536839" expanded="true" signature="2006:2018" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,18 +126,43 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="594">
               <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+              <folding>
+                <marker date="1510352237024" expanded="true" signature="528:645" ph="//..." />
+                <marker date="1510352237024" expanded="true" signature="918:1021" ph="//..." />
+                <marker date="1510352237024" expanded="true" signature="1098:1170" ph="{...}" />
+                <marker date="1510352237024" expanded="true" signature="1230:1476" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bittrex_api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bittrex_api/bittrex_api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="297" column="10" lean-forward="false" selection-start-line="297" selection-start-column="10" selection-end-line="297" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bittrex_api.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bittrex_api/bittrex_api.js">
+      <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project_modules_bittrex/side_projects/prices_graph/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="305" column="32" lean-forward="false" selection-start-line="305" selection-start-column="32" selection-end-line="305" selection-end-column="32" />
+            <state relative-caret-position="828">
+              <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coin_map.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bittrex_api/coin_map.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,11 +191,11 @@
       <find>module</find>
       <find>server</find>
       <find>here</find>
-      <find>console</find>
       <find>p</find>
       <find>finalAmo</find>
       <find>esting</find>
       <find>app</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,12 +218,20 @@
         <option value="$PROJECT_DIR$/routes/bittrex.js" />
         <option value="$PROJECT_DIR$/views/market_update.jade" />
         <option value="$PROJECT_DIR$/bittrex_api/bittrex_api.js" />
+        <option value="$PROJECT_DIR$/project_modules_bittrex/side_projects/prices_graph/graph.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -183,7 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,6 +298,13 @@
             <path>
               <item name="BittrexNodeJS" type="b2602c69:ProjectViewProjectNode" />
               <item name="BittrexNodeJS" type="462c0819:PsiDirectoryNode" />
+              <item name="project_modules_bittrex" type="462c0819:PsiDirectoryNode" />
+              <item name="side_projects" type="462c0819:PsiDirectoryNode" />
+              <item name="prices_graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BittrexNodeJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BittrexNodeJS" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -231,6 +316,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -241,6 +327,9 @@
     <property name="javascript.nodejs.core.library.configured.version" value="4.2.6" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -282,42 +371,35 @@
       <workItem from="1510140225740" duration="13695000" />
       <workItem from="1510350173222" duration="3240000" />
       <workItem from="1510508880144" duration="3661000" />
+      <workItem from="1510592610302" duration="96000" />
+      <workItem from="1510592810968" duration="5458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67609000" />
+    <option name="totallyTimeSpent" value="73163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2239" y="60" width="1857" height="970" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24043126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.432243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.432243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.432243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.240625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,22 +413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/bittrex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -365,7 +431,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1962">
           <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510352479632" expanded="true" signature="21:52" ph="/** Module dependencies. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="163:221" ph="/** Get port from environment and store in Express. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="301:331" ph="/** Create HTTP server. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="423:485" ph="/** Listen on provided port, on all network interfaces. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="575:635" ph="/** Normalize a port into a number, string, or false. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="665:837" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="719:758" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="777:818" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="839:895" ph="/** Event listener for HTTP server &quot;error&quot; event. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="921:1407" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="957:979" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="1143:1405" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="1163:1260" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1283:1369" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1382:1401" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1409:1469" ph="/** Event listener for HTTP server &quot;listening&quot; event. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="1494:1647" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -394,7 +478,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510351396630" expanded="true" signature="127:147" ph="/*...*/" />
+            <marker date="1510351396630" expanded="true" signature="189:237" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="285:689" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510351396630" expanded="true" signature="330:687" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="391:679" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="488:537" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="577:622" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="690:792" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -402,7 +495,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510352536839" expanded="true" signature="108:213" ph="//..." />
+            <marker date="1510352536839" expanded="true" signature="372:474" ph="{&quot;API_KEY&quot;: '1008ea4bd3544382a7e5bebd12ecdd66'...}" />
+            <marker date="1510352536839" expanded="true" signature="516:841" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="534:649" ph="{&quot;market&quot;: 'USDT-ETH'...}" />
+            <marker date="1510352536839" expanded="true" signature="732:837" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="883:1375" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1264:1371" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1429:1850" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1501:1796" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1549:1790" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1597:1778" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1898:2028" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510352536839" expanded="true" signature="1943:2026" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="2006:2018" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -438,7 +546,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
+          <folding>
+            <marker date="1510352536839" expanded="true" signature="108:213" ph="//..." />
+            <marker date="1510352536839" expanded="true" signature="372:474" ph="{&quot;API_KEY&quot;: '1008ea4bd3544382a7e5bebd12ecdd66'...}" />
+            <marker date="1510352536839" expanded="true" signature="516:841" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="534:649" ph="{&quot;market&quot;: 'USDT-ETH'...}" />
+            <marker date="1510352536839" expanded="true" signature="732:837" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="883:1375" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1264:1371" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1429:1850" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1501:1796" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1549:1790" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1597:1778" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1898:2028" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510352536839" expanded="true" signature="1943:2026" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="2006:2018" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -467,7 +590,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510351396630" expanded="true" signature="127:147" ph="/*...*/" />
+            <marker date="1510351396630" expanded="true" signature="189:237" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="285:689" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510351396630" expanded="true" signature="330:687" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="391:679" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="488:537" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="577:622" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="690:792" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,7 +607,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding />
+          <folding>
+            <marker date="1510352479632" expanded="true" signature="21:52" ph="/** Module dependencies. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="163:221" ph="/** Get port from environment and store in Express. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="301:331" ph="/** Create HTTP server. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="423:485" ph="/** Listen on provided port, on all network interfaces. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="575:635" ph="/** Normalize a port into a number, string, or false. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="665:837" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="719:758" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="777:818" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="839:895" ph="/** Event listener for HTTP server &quot;error&quot; event. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="921:1407" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="957:979" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="1143:1405" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="1163:1260" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1283:1369" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1382:1401" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1409:1469" ph="/** Event listener for HTTP server &quot;listening&quot; event. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="1494:1647" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -497,7 +647,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1510352536839" expanded="true" signature="108:213" ph="//..." />
+            <marker date="1510352536839" expanded="true" signature="372:474" ph="{&quot;API_KEY&quot;: '1008ea4bd3544382a7e5bebd12ecdd66'...}" />
+            <marker date="1510352536839" expanded="true" signature="516:841" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="534:649" ph="{&quot;market&quot;: 'USDT-ETH'...}" />
+            <marker date="1510352536839" expanded="true" signature="732:837" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="883:1375" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1264:1371" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1429:1850" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1501:1796" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1549:1790" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1597:1778" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1898:2028" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510352536839" expanded="true" signature="1943:2026" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="2006:2018" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -519,7 +684,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510351396630" expanded="true" signature="127:147" ph="/*...*/" />
+            <marker date="1510351396630" expanded="true" signature="189:237" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="285:689" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510351396630" expanded="true" signature="330:687" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="391:679" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="488:537" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="577:622" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="690:792" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -626,9 +800,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="216">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1510351396630" expanded="true" signature="127:147" ph="/*...*/" />
+            <marker date="1510351396630" expanded="true" signature="189:237" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="285:689" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510351396630" expanded="true" signature="330:687" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="391:679" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="488:537" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="577:622" ph="{...}" />
+            <marker date="1510351396630" expanded="true" signature="690:792" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -642,17 +825,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="594">
           <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding />
+          <folding>
+            <marker date="1510352237024" expanded="true" signature="528:645" ph="//..." />
+            <marker date="1510352237024" expanded="true" signature="918:1021" ph="//..." />
+            <marker date="1510352237024" expanded="true" signature="1098:1170" ph="{...}" />
+            <marker date="1510352237024" expanded="true" signature="1230:1476" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/bittrex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="1116">
           <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-          <folding />
+          <folding>
+            <marker date="1510352536839" expanded="true" signature="108:213" ph="//..." />
+            <marker date="1510352536839" expanded="true" signature="372:474" ph="{&quot;API_KEY&quot;: '1008ea4bd3544382a7e5bebd12ecdd66'...}" />
+            <marker date="1510352536839" expanded="true" signature="516:841" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="534:649" ph="{&quot;market&quot;: 'USDT-ETH'...}" />
+            <marker date="1510352536839" expanded="true" signature="732:837" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="883:1375" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1264:1371" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1429:1850" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1501:1796" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1549:1790" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1597:1778" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="1898:2028" ph="{&quot;router&quot;: router...}" />
+            <marker date="1510352536839" expanded="true" signature="1943:2026" ph="{...}" />
+            <marker date="1510352536839" expanded="true" signature="2006:2018" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -666,9 +869,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="1746">
           <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-          <folding />
+          <folding>
+            <marker date="1510352479632" expanded="true" signature="21:52" ph="/** Module dependencies. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="163:221" ph="/** Get port from environment and store in Express. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="301:331" ph="/** Create HTTP server. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="423:485" ph="/** Listen on provided port, on all network interfaces. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="575:635" ph="/** Normalize a port into a number, string, or false. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="665:837" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="719:758" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="777:818" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="839:895" ph="/** Event listener for HTTP server &quot;error&quot; event. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="921:1407" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="957:979" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="1143:1405" ph="{...}" />
+            <marker date="1510352479632" expanded="true" signature="1163:1260" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1283:1369" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1382:1401" ph="..." />
+            <marker date="1510352479632" expanded="true" signature="1409:1469" ph="/** Event listener for HTTP server &quot;listening&quot; event. ...*/" />
+            <marker date="1510352479632" expanded="true" signature="1494:1647" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,18 +900,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bittrex_api/bittrex_api.js">
+    <entry file="file://$PROJECT_DIR$/project_modules_bittrex/side_projects/graph_prices.js" />
+    <entry file="file://$PROJECT_DIR$/bittrex_api/coin_map.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="305" column="32" lean-forward="false" selection-start-line="305" selection-start-column="32" selection-end-line="305" selection-end-column="32" />
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_modules_bittrex/side_projects/graph_prices.js">
+    <entry file="file://$PROJECT_DIR$/bittrex_api/bittrex_api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="297" column="10" lean-forward="false" selection-start-line="297" selection-start-column="10" selection-end-line="297" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_modules_bittrex/side_projects/prices_graph/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
           <folding />
         </state>
       </provider>
