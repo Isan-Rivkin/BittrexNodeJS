@@ -271,21 +271,23 @@ function collector(limit,current,object,callback) {
  * all tickers
  * @type {number}
  */
-
+ var counter = 0;
 function getAllTickers(callback){
-    var counter = 0;
+    // var counter = 0;
     bittrex.getmarketsummaries( function( data, err ) {
         if (err) {
             return console.error(err);
         }
-        for( var i in data.result ) {
-            console.log(counter);
-            bittrex.getticker( { market : data.result[i].MarketName }, function( ticker ) {
-                ticker.name = data.result[i].MarketName;
-                collector(Math.max(0,data.result.length-1),counter,ticker,callback);
-                counter ++;
-            });
-        }
+        callback(data);
+        // for( var i in data.result ) {
+        //     console.log('TRUE data size:'+ data.result.length);
+        //     console.log('good ====> ',data.result[i]);
+        //     bittrex.getticker( { market : data.result[i].MarketName }, function( ticker ) {
+        //         ticker.name = data.result[i].MarketName;
+        //         collector(Math.max(0,ticker.result.length-1),counter,ticker,callback);
+        //         counter ++;
+        //     });
+        // }
     });
 }
 
@@ -302,7 +304,15 @@ function getAllTickers(callback){
 // });
 
 getAllTickers(function(tickers){
-    console.log(tickers);
+    //console.log(tickers);
+    for(i in tickers.result)
+    {
+        console.log('done size: ', tickers.result[i].MarketName);
+    }
+    //console.log(tickers[0]);
+    // for(var i in tickers){
+    //     console.log(tickers[i].name);
+    // }
     //console.log('some =>' + tickers.length);
 });
 
